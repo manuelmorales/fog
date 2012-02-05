@@ -14,6 +14,9 @@ module Fog
       when :bluebox
         require 'fog/bluebox/compute'
         Fog::Compute::Bluebox.new(attributes)
+      when :cloudsigma
+        require 'fog/cloudsigma/compute'
+        Fog::Compute::CloudSigma.new(attributes)
       when :brightbox
         require 'fog/brightbox/compute'
         Fog::Compute::Brightbox.new(attributes)

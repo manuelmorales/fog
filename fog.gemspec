@@ -56,6 +56,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rspec', '~>1.3.1')
   s.add_development_dependency('shindo', '~>0.3.4')
   s.add_development_dependency('virtualbox', '~>0.9.1')
+  s.add_development_dependency('ruby-debug19') if RUBY_VERSION == '1.9.2'
 #  s.add_development_dependency('ruby-libvirt','~>0.4.0')
 
   s.files = `git ls-files`.split("\n")
